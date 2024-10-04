@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="gsoft" translate="label" sortOrder="999">
+			<label>gsoft</label>
+		</tab>
+		<section id="gsoft_login" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Login</label>
+			<tab>gsoft</tab>
+			<resource>Gsoft_Login::config_gsoft_login</resource>
+			<group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>general</label>
+				<field id="locked_group" type="select" sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+					<label>Id Grupo LOCKED</label>
+					<comment>Se bloqueara el login de este grupo de usuarios</comment>
+					<source_model>Gsoft\Login\Model\Config\Source\CustomerGroup</source_model>
+				</field>
+				<field id="locked_group_msg"  sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+					<label>Mensaje a Locked</label>
+					<comment>Se mostrará este mensaje al intentar logear</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

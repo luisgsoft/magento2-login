@@ -1,0 +1,26 @@
+{
+    "name": "gsoft/module-login",
+    "description": "Control de login de usuarios",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
+            "name": "Luis Miguel Salinas",
+            "email": "luismisalinas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Gsoft\\Login\\": ""
+        }
+    }
+}
