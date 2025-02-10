@@ -25,6 +25,7 @@ class Login implements ObserverInterface
     private $customerSession;
     private $messageManager;
     protected $scopeConfig;
+	protected $redirect;
 
     public function __construct(
         \Magento\Framework\App\ResponseFactory $responseFactory,
